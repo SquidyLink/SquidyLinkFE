@@ -1,17 +1,16 @@
 import './App.css';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
 import LoginPage from "./pages/Login";
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" elements={<LoginPage/>}/>
-    </Routes>
-    </BrowserRouter>
-  
-  )
+    <div>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+    <LoginPage></LoginPage>
+    </div>
+  );
 }
 
 export default App;
