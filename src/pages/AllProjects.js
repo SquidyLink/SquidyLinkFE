@@ -1,11 +1,11 @@
-import ProjectTable from "../components/table"
+import ContractorTable from "../components/ContractorTable"
 
 export default function Projects() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
       <div>
-        <ProjectTable />
+        <ContractorTable />
       </div>
     )
   }
