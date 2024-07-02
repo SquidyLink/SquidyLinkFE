@@ -26,21 +26,21 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-const [htmlContent, setHtmlContent] = useState('');
+  const [htmlContent, setHtmlContent] = useState('');
 
-useEffect(() => {
-  const fetchHtmlContent = async () => {
-    try {
-      const response = await fetch('http://localhost:8000/facility/3/avg-elec-data');
-      const text = await response.text();
-      setHtmlContent(text);
-    } catch (error) {
-      console.error('Error fetching HTML content:', error);
-    }
-  };
+  useEffect(() => {
+    const fetchHtmlContent = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/facility/3/avg-elec-data');
+        const text = await response.text();
+        setHtmlContent(text);
+      } catch (error) {
+        console.error('Error fetching HTML content:', error);
+      }
+    };
 
-  fetchHtmlContent();
-}, []);
+    fetchHtmlContent();
+  }, []);
   return (
     <>
       {/*
@@ -209,13 +209,14 @@ useEffect(() => {
             <div className="flex mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
               <iframe src="http://localhost:8000/facility/3/avg-elec-data" width="100%" height="500px"></iframe>
               <div class="w-full self-center">
-                Text here
+                Based on your daily average profile, you would benefit from installing PV panels on your facility as most of your consumption happens during the day.
+
               </div>
             </div>
             <div className="flex mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
               <iframe src="http://localhost:8000/facility/3/avg-elec-and-carbon-data" width="100%" height="500px"></iframe>
               <div class="w-full self-center">
-                text here
+                You are consuming electricity during high emissions hours. You could reduce your carbon footprint by shifting your consumption to low emissions hours. This could be achieved by adjusting your working hours and/or installing batteries.
               </div>
             </div>
             <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
