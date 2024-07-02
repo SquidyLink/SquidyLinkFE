@@ -209,7 +209,12 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link to="/facility/login" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+              Facility Log in <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <Link to="/contractor/login" className="text-sm font-semibold leading-6 text-gray-900">
+              Contractor Log in <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </nav>
