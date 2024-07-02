@@ -56,30 +56,30 @@ const timeline = [
 const jobOpenings = [
   {
     id: 1,
-    role: 'Full-time designer',
+    role: 'Harry X',
     href: '#',
     description:
-      'Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.',
-    salary: '$75,000 USD',
-    location: 'San Francisco, CA',
+      'I reduced my carbon emissions by 15% thanks to SquidLink! Would highly recommend!',
+    job: 'Facility owner',
+    location: 'London, UK',
   },
   {
     id: 2,
-    role: 'Laravel developer',
+    role: 'Xuan W',
     href: '#',
     description:
-      'Et veniam et officia dolorum rerum. Et voluptas consequatur magni sapiente amet voluptates dolorum. Ut porro aut eveniet.',
-    salary: '$125,000 USD',
-    location: 'San Francisco, CA',
+      'Quick and simple to use!',
+    job: 'Facility Owner',
+    location: 'Hertfordshire, UK',
   },
   {
     id: 3,
-    role: 'React Native developer',
+    role: 'Sophia Z',
     href: '#',
     description:
-      'Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.',
-    salary: '$105,000 USD',
-    location: 'San Francisco, CA',
+      'Helped me find work, thank you so much!',
+    job: 'Contractor',
+    location: 'Basildon, UK',
   },
 ]
 const footerNavigation = {
@@ -273,9 +273,9 @@ export default function Example() {
 
       <main className="isolate">
         {/* Hero section */}
-        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-pink-100/20 pt-14">
           <div
-            className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+            className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-pink-600/10 ring-1 ring-pink-50 sm:-mr-80 lg:-mr-96"
             aria-hidden="true"
           />
           <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
@@ -307,7 +307,7 @@ export default function Example() {
               <div key={item.name}>
                 <time
                   dateTime={item.dateTime}
-                  className="flex items-center text-sm font-semibold leading-6 text-indigo-600"
+                  className="flex items-center text-sm font-semibold leading-6 text-pink-600"
                 >
                   <svg viewBox="0 0 4 4" className="mr-4 h-1 w-1 flex-none" aria-hidden="true">
                     <circle cx={2} cy={2} r={2} fill="currentColor" />
@@ -375,7 +375,7 @@ export default function Example() {
             </div>
             <div className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
               <div
-                className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
+                className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#f9bac3] to-[#f9bac3] opacity-25"
                 style={{
                   clipPath:
                     'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
@@ -479,11 +479,11 @@ export default function Example() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-indigo-600 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
+            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-pink-600 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
               <p className="flex-none text-3xl font-bold tracking-tight text-white">401,093</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">Transactions this year</p>
-                <p className="mt-2 text-base leading-7 text-indigo-200">
+                <p className="mt-2 text-base leading-7 text-pink-200">
                   Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu duis porta aliquam ornare.
                 </p>
               </div>
@@ -496,7 +496,7 @@ export default function Example() {
           <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                We’re always looking for awesome people to join us
+                Highly rated amongst facilities and contractors across the UK!
               </h2>
               <p className="mt-6 text-xl leading-8 text-gray-600">
                 Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
@@ -509,7 +509,7 @@ export default function Example() {
               />
             </div>
             <div className="w-full lg:max-w-xl lg:flex-auto">
-              <h3 className="sr-only">Job openings</h3>
+              <h3 className="sr-only">Reviews</h3>
               <ul className="-my-8 divide-y divide-gray-100">
                 {jobOpenings.map((opening) => (
                   <li key={opening.id} className="py-8">
@@ -523,8 +523,8 @@ export default function Example() {
                       </dd>
                       <dt className="sr-only">Description</dt>
                       <dd className="mt-2 w-full flex-none text-base leading-7 text-gray-600">{opening.description}</dd>
-                      <dt className="sr-only">Salary</dt>
-                      <dd className="mt-4 text-base font-semibold leading-7 text-gray-900">{opening.salary}</dd>
+                      <dt className="sr-only">Job</dt>
+                      <dd className="mt-4 text-base font-semibold leading-7 text-gray-900">{opening.job}</dd>
                       <dt className="sr-only">Location</dt>
                       <dd className="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
                         <svg viewBox="0 0 2 2" className="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
@@ -537,7 +537,7 @@ export default function Example() {
                 ))}
               </ul>
               <div className="mt-8 flex border-t border-gray-100 pt-8">
-                <a href="#" className="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                <a href="#" className="text-sm font-semibold leading-6 text-pink-600 hover:text--500">
                   View all openings <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
@@ -622,13 +622,13 @@ export default function Example() {
                   id="email-address"
                   autoComplete="email"
                   required
-                  className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                  className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pink-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                   placeholder="Enter your email"
                 />
                 <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="flex w-full items-center justify-center rounded-md bg-pink-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
                   >
                     Subscribe
                   </button>
