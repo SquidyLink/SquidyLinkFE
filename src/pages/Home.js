@@ -207,7 +207,7 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link to="/facility/login" className="text-sm font-semibold leading-6 text-gray-900">
               Facility Log in <span aria-hidden="true">&rarr;</span>
             </Link>
@@ -216,6 +216,18 @@ export default function Example() {
             <Link to="/contractor/login" className="text-sm font-semibold leading-6 text-gray-900">
               Contractor Log in <span aria-hidden="true">&rarr;</span>
             </Link>
+          </div> */}
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:space-x-4">
+            <div>
+              <Link to="/facility/login" className="text-sm font-semibold leading-6 text-gray-900">
+              Facility Log in <span aria-hidden="true"></span>
+              </Link>
+              </div>
+              <div>
+                <Link to="/contractor/login" className="text-sm font-semibold leading-6 text-gray-900">
+                Contractor Log in <span aria-hidden="true"></span>
+                </Link>
+                </div>
           </div>
         </nav>
         <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
