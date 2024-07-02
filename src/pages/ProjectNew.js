@@ -57,6 +57,7 @@ export default function ProjectForm() {
     try {
       const response = await fetch('http://localhost:8000/project', {
         method: 'POST',
+        mode: "cors",
         headers: {
           'Content-Type': 'application/json',
         },
