@@ -1,6 +1,7 @@
 import './App.css';
 import Home from "./pages/Home";
 import FacilityLoginPage from "./pages/FacilityLogin";
+import ContractorLoginPage from './pages/ContractorLogin';
 import FacilityNew from "./pages/FacilityNew";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element ={<Home/>}/>
           <Route path="/facility/login" element ={<FacilityLoginPage/>}/>
+          <Route path="/contractor/login" element ={<ContractorLoginPage/>}/>
           <Route path="/facility/new" element ={<FacilityNew/>}/>
         </Routes>
       </BrowserRouter>
