@@ -1,6 +1,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from 'react'
+import StatsHeader from '../components/stats'
 
 const user = {
   name: 'Tom Cook',
@@ -51,10 +52,13 @@ export default function Example() {
         <body class="h-full">
         ```
       */}
+
       <div className="min-h-full">
+        
         <Disclosure as="nav" className="border-b border-gray-200 bg-white">
           {({ open }) => (
             <>
+
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between">
                   <div className="flex">
@@ -206,7 +210,13 @@ export default function Example() {
             </div>
           </header>
           <main>
+
             <div className="flex mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+              <StatsHeader />
+            </div>
+            
+            <div className="flex mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+
               <iframe src="http://localhost:8000/facility/3/avg-elec-data" width="100%" height="500px"></iframe>
               <div class="w-full self-center">
                 Based on your daily average profile, you would benefit from installing PV panels on your facility as most of your consumption happens during the day.
