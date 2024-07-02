@@ -3,7 +3,8 @@ import Home from "./pages/Home";
 import FacilityLoginPage from "./pages/FacilityLogin";
 import ContractorLoginPage from './pages/ContractorLogin';
 import FacilityNew from "./pages/FacilityNew";
-import Projects from "./pages/Projects";
+import Projects from "./pages/ProjectList";
+import AllProjects from "./pages/AllProjects";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contractor/login" element ={<ContractorLoginPage/>}/>
           <Route path="/facility/new" element ={<FacilityNew/>}/>
           <Route path="/projects" element ={<Projects/>}/>
+          <Route path="/allprojects" element ={<AllProjects/>}/>
         </Routes>
       </BrowserRouter>
     </>

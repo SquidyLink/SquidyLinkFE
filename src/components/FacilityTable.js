@@ -30,7 +30,7 @@ function getRandomRelevance() {
 
 
 
-  export default function ProjectTable() {
+  export default function FacilityTable() {
     return (
       <div className="bg-gray-900 h-full">
         <div className="mx-auto max-w-7xl">
