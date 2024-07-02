@@ -1,4 +1,4 @@
-export default function LoginPage() {
+export default function FacilityLoginPage() {
     return (
       <>
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8" style={{display: `flex`, flexDirection: `column`, alignItems: `center`, justifyContent: `center`, height: `100%`}}>
