@@ -1,8 +1,8 @@
 const stats = [
     { name: 'Carbon dioxide emissions:', value: '5.6' , unit: 'tCO2e per year '},
     { name: 'Total energy costs', value: '54k', unit: '£ per year' },
-    // { name: 'Number of servers', value: '3' },
-    // { name: 'Success rate', value: '98.5%' },
+    { name: 'peak electricity import', value: '250 ', unit: 'kW' },
+    { name: 'current export', value: '20', unit: 'kW' },
   ]
   
   export default function StatsHeader() {
