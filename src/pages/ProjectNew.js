@@ -3,14 +3,11 @@ import { useState, useEffect } from 'react';
 export default function ProjectForm() {
   const [formData, setFormData] = useState({
     name: '',
-    description: '',
-    skills: [],
-    facility_id: '', // Introduce facility_id as an integer input
+    facility_id: 0,
+    skills: [], // Array of skill IDs
   });
   const [skillsList, setSkillsList] = useState([]);
   const [loadingSkills, setLoadingSkills] = useState(true);
-  const [facilities, setFacilities] = useState([]);
-  const [loadingFacilities, setLoadingFacilities] = useState(true);
 
   useEffect(() => {
     // Fetch skills from the backend
@@ -29,24 +26,7 @@ export default function ProjectForm() {
       }
     };
 
-    // Fetch facilities from the backend
-    const fetchFacilities = async () => {
-      try {
-        const response = await fetch('http://localhost:8000/facilities');
-        if (!response.ok) {
-          throw new Error('Failed to fetch facilities');
-        }
-        const facilitiesData = await response.json();
-        setFacilities(facilitiesData);
-        setLoadingFacilities(false);
-      } catch (error) {
-        console.error('Error fetching facilities:', error);
-        setLoadingFacilities(false);
-      }
-    };
-
     fetchSkills();
-    fetchFacilities();
   }, []);
 
   const handleChange = (e) => {
@@ -67,7 +47,7 @@ export default function ProjectForm() {
     } else {
       setFormData({
         ...formData,
-        skills: formData.skills.filter(skill => skill !== skillId),
+        skills: formData.skills.filter((skill) => skill !== skillId),
       });
     }
   };
@@ -75,7 +55,7 @@ export default function ProjectForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:8000/project/new', {
+      const response = await fetch('http://localhost:8000/project', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -120,23 +100,7 @@ export default function ProjectForm() {
                 </div>
               </div>
 
-              <div className="sm:col-span-full">
-                <label htmlFor="description" className="block text-sm font-medium leading-6 text-gray-900">
-                  Description
-                </label>
-                <div className="mt-2">
-                  <textarea
-                    id="description"
-                    name="description"
-                    rows="4"
-                    value={formData.description}
-                    onChange={handleChange}
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-
-              <div className="sm:col-span-full">
+              <div className="sm:col-span-2">
                 <label htmlFor="facility_id" className="block text-sm font-medium leading-6 text-gray-900">
                   Facility ID
                 </label>
@@ -152,7 +116,7 @@ export default function ProjectForm() {
                 </div>
               </div>
 
-              <div className="sm:col-span-full">
+              <div className="sm:col-span-2">
                 <label className="block text-sm font-medium leading-6 text-gray-900">
                   Skills
                 </label>

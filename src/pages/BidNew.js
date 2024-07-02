@@ -21,7 +21,7 @@ export default function BidForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:8000/bid/new', {
+      const response = await fetch('http://localhost:8000/bid', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
