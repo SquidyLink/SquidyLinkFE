@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function FacilityLoginPage() {
     return (
       <>
@@ -9,7 +11,7 @@ export default function FacilityLoginPage() {
               alt="Your Company"
             />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-              Sign in to your account
+              Sign in to your Facility account
             </h2>
           </div>
   
@@ -65,10 +67,15 @@ export default function FacilityLoginPage() {
             </form>
   
             <p className="mt-10 text-center text-sm text-gray-500">
-              Not a member?{' '}
-              <a href="#" className="font-semibold leading-6 text-red-600 hover:text-indigo-500">
-                Start a 14 day free trial
-              </a>
+              Are you a Contractor?{' '}
+              <Link to="/contractor/login"className="font-semibold leading-6 text-red-600 hover:text-indigo-500">
+                Sign in to your account here
+              </Link>
+            </p>
+            <p className="mt-10 text-center text-sm text-gray-500">
+              <Link to="/"className="font-semibold leading-6 text-grey-600 hover:text-indigo-500">
+                Return to home page
+              </Link>
             </p>
           </div>
         </div>
