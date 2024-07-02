@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid';
+import { useNavigate } from 'react-router-dom';
 
 export default function ContractorForm() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,7 @@ export default function ContractorForm() {
       [name]: value,
     });
   };
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,10 +31,11 @@ export default function ContractorForm() {
         },
         body: JSON.stringify(formData),
       });
+      navigate("/projects");
       if (response.ok) {
         alert('Contractor information saved successfully.');
       } else {
-        alert('Failed to save contractor information.');
+        //alert('Failed to save contractor information.');
       }
     } catch (error) {
       console.error('Error:', error);
