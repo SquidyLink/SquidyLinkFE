@@ -7,6 +7,7 @@ import ContractorNew from "./pages/ContractorNew";
 import BidNew from "./pages/BidNew";
 import ProjectNew from "./pages/ProjectNew";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/bid/new" element ={<BidNew/>}/>
           <Route path="/project/new" element ={<ProjectNew/>}/>
           <Route path="/projects" element ={<Projects/>}/>
+           <Route path="/project/detail" element ={<ProjectDetail/>}/>
         </Routes>
       </BrowserRouter>
     </>
