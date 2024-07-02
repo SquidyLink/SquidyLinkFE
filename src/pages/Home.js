@@ -289,6 +289,22 @@ export default function Example() {
                   the inefficient exchange of data between facilities and improvement providers. Our platform ensures seamless
                   and secure data flow, accelerating your journey towards sustainable and energy-efficient buildings.
                 </p>
+                <div class="flex items-center gap-x-8 justify-center mt-32">
+                  <a href="/facility/new">
+                    <div class="flex items-center bg-blue-400 border-2 border-blue-700 rounded-2xl w-48 h-16">
+                      <p class="w-full text-center font-bold px-8 py-4">
+                        Sign up as facility owner
+                      </p>
+                    </div>
+                  </a>
+                  <a href="/contractor/new">
+                    <div class="flex items-center bg-blue-400 border-2 border-blue-700 rounded-2xl w-32 h-16">
+                      <p class="w-full text-center font-bold">
+                        Sign up as contractor
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
               <img
                 src="/assets/landing.png"

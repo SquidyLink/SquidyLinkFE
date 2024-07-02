@@ -69,7 +69,9 @@ function getRandomRelevance() {
                             </td>
                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{project.name}</td>
                             <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
+                            <a class="underline" href="/project/detail">
                               {project.description}
+                            </a>
                             </td>
                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">
                                 <>
@@ -80,12 +82,14 @@ function getRandomRelevance() {
                             </td>
                             <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                 <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
+                              <a href="/bid/new">
                                 <button
                                     type="button"
                                     className="block rounded-md bg-indigo-500 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                                 >
                                     Bid
                                 </button>
+                              </a>
                                 </div>
                             </td>
                           </tr>

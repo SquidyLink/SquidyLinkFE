@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid';
+import { useNavigate } from 'react-router-dom';
 
 export default function Example() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export default function Example() {
       [name]: value,
     });
   };
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,6 +36,7 @@ export default function Example() {
       });
       if (response.ok) {
         alert('Facility information saved successfully.');
+        navigate("/project/new");
       } else {
         alert('Failed to save facility information.');
       }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function ProjectForm() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,7 @@ export default function ProjectForm() {
 
     fetchSkills();
   }, []);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -65,6 +67,7 @@ export default function ProjectForm() {
       });
       if (response.ok) {
         alert('Project created successfully.');
+        navigate("/project/detail");
       } else {
         alert('Failed to create project.');
       }
