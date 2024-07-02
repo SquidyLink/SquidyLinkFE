@@ -270,13 +270,13 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
               <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-                We’re a passionate group of people working from around the world to build the future of ecommerce.
+                Streamline Your Path to Decarbonization.
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                  irure qui lorem cupidatat commodo.
+                  At Squidlink, we tackle the main challenge slowing down the decarbonization of the building stock:
+                  the inefficient exchange of data between facilities and improvement providers. Our platform ensures seamless
+                  and secure data flow, accelerating your journey towards sustainable and energy-efficient buildings.
                 </p>
               </div>
               <img
@@ -318,11 +318,12 @@ export default function Example() {
         <div className="mx-auto mt-32 max-w-7xl sm:mt-40 sm:px-6 lg:px-8">
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Our customers love us
+              Simplified Project Collaboration
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Aliquip reprehenderit incididunt amet quis fugiat ut velit. Sit occaecat labore proident cillum in nisi
-              adipisicing officia excepteur tempor deserunt.
+              Have a project in mind? Whether you’re planning to install new EV chargers or upgrade your HVAC system,
+              Squidlink connects you with interested companies. They’ll get access to your facility’s data and additional
+              project-specific information in a secure way, enabling them to provide accurate and competitive quotes.
             </p>
             <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">
               <img
@@ -373,6 +374,8 @@ export default function Example() {
           </div>
         </div>
 
+
+
         {/* Content section */}
         <div className="mt-32 overflow-hidden sm:mt-40">
           <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
@@ -380,12 +383,21 @@ export default function Example() {
               <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our people</h2>
                 <p className="mt-6 text-xl leading-8 text-gray-600">
-                  Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati eos iste. Soluta rerum quidem
-                  minus ut molestiae velit error quod. Excepturi quidem expedita molestias quas.
+                  <p>At Squidlink, our strength lies in our people. We are a diverse team of five professionals, each bringing over a decade of experience in the energy industry and extensive expertise in software development. Together, we are committed to understanding your needs and helping you achieve your decarbonization goals.</p>
+                  <ul>
+                    <li>
+                      <strong>Energy Expertise:</strong> Our team includes a dedicated energy expert who provides deep industry knowledge and insights, ensuring that our solutions are not only technically sound but also aligned with the latest advancements in energy efficiency and sustainability.
+                    </li>
+                    <li>
+                      <strong>Backend Development:</strong> We have two skilled backend developers who focus on creating robust, secure, and scalable systems. Their expertise ensures that your data flows seamlessly and securely, enabling efficient and effective project collaboration.
+                    </li>
+                    <li>
+                      <strong>Frontend Development:</strong> Our two talented frontend developers are adept at creating intuitive and user-friendly interfaces. They ensure that our platform is easy to navigate and provides a seamless experience for all users, making it simple for facilities and companies to connect and collaborate.
+                    </li>
+                  </ul>
+                  <p>Together, we form a dynamic team dedicated to making sustainable building data accessible and actionable. We understand the unique challenges you face in the decarbonization journey and are here to provide the support and solutions you need to succeed.</p>
                 </p>
                 <p className="mt-6 text-base leading-7 text-gray-600">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.
                 </p>
               </div>
               <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
