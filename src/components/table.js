@@ -30,7 +30,7 @@ function getRandomRelevance() {
 
 
 
-  export default function Example() {
+  export default function ProjectTable() {
     return (
       <div className="bg-gray-900 h-full">
         <div className="mx-auto max-w-7xl">
@@ -74,7 +74,7 @@ function getRandomRelevance() {
                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">
                                 <>
                                 <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{"width": "45%"}}> {project.relevance}</div>
+                                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{"width": project.relevance}}> {project.relevance}</div>
                                 </div>
                                 </>
                             </td>
